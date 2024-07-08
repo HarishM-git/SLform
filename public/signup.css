@@ -1,0 +1,67 @@
+/* General styles for the body and containers */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signup-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.signup-container h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-container input[type="text"],
+.signup-container input[type="password"],
+.signup-container input[type="submit"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.signup-container input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup-container input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.signup-container a {
+  display: block;
+  margin-top: 10px;
+  color: #4CAF50;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.signup-container a:hover {
+  color: #45a049;
+}
+
+.label{
+  margin-bottom: 5px;
+}

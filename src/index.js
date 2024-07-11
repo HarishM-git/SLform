@@ -3,6 +3,7 @@ const app = express();
 const path = require("path");
 const hbs = require("hbs");
 const collection = require("./mongodb");
+require('dotenv').config()
 
 const templatePath = path.join(__dirname, "../templates");
 app.use(express.json());
@@ -63,6 +64,6 @@ app.post("/login", async (req, res) => {
   }
 });
 
-app.listen(9000, () => {
+app.listen(process.env.PORT, () => {
   console.log("Port connected");
 });
